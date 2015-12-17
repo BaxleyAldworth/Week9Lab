@@ -188,6 +188,14 @@
     <Compile Include="Migrations\201512172009331_Initial-Create.Designer.cs">
       <DependentUpon>201512172009331_Initial-Create.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512172210115_changeprops.cs" />
+    <Compile Include="Migrations\201512172210115_changeprops.Designer.cs">
+      <DependentUpon>201512172210115_changeprops.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512172224291_displays.cs" />
+    <Compile Include="Migrations\201512172224291_displays.Designer.cs">
+      <DependentUpon>201512172224291_displays.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -278,6 +286,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201512172009331_Initial-Create.resx">
       <DependentUpon>201512172009331_Initial-Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512172210115_changeprops.resx">
+      <DependentUpon>201512172210115_changeprops.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512172224291_displays.resx">
+      <DependentUpon>201512172224291_displays.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
