@@ -82,7 +82,8 @@ namespace Week9Lab.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(post).State = EntityState.Modified;
+                post.PostDate = DateTime.Now;
+                db.Posts.Add(post);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
