@@ -178,7 +178,6 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PostsController.cs" />
     <Compile Include="Global.asax.cs">
@@ -196,8 +195,13 @@
     <Compile Include="Migrations\201512172224291_displays.Designer.cs">
       <DependentUpon>201512172224291_displays.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512181713190_editingmodels.cs" />
+    <Compile Include="Migrations\201512181713190_editingmodels.Designer.cs">
+      <DependentUpon>201512181713190_editingmodels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Follow.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Post.cs" />
@@ -292,6 +296,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201512172224291_displays.resx">
       <DependentUpon>201512172224291_displays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512181713190_editingmodels.resx">
+      <DependentUpon>201512181713190_editingmodels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
