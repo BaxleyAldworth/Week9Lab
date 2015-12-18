@@ -11,7 +11,9 @@ namespace Week9Lab.Models
         public string Email { get; set; }
         public string Password { get; set; }
         public virtual List<Post> Posts { get; set; }
-        public Profile ProfileInfo { get; set; }
+        public bool Follow { get; set; }
+        public bool Unfollow { get; set; }
+        public bool AlreadyFollowing { get; set; }
 
 
     }
