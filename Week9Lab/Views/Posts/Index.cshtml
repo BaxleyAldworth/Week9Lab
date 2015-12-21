@@ -1,27 +1,18 @@
 ﻿@model IEnumerable<Week9Lab.Models.Post>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Twitter";
 }
 
-<h2>Index</h2>
-
 <p>
-    @Html.ActionLink("Create New", "Create")
+   <a href="http://localhost:61247/Posts/Create">
+        <img border="0" alt="twitter" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhYyAg3RkkTpLADqR4fAkAdcq8R8K1XRuUbi7hnqa87-_lnlaH" width="40" height="40">
+    </a>
 </p>
+
+
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Message)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ImageUrl)
-        </th>
-        <th></th>
-    </tr>
+<div>Tweet Away!</div>
 
 @foreach (var item in Model) {
     <tr>
@@ -31,9 +22,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.Message)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ImageUrl)
-        </td>
+       
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.PostId }) |
             @Html.ActionLink("Details", "Details", new { id=item.PostId }) |

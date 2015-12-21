@@ -30,7 +30,8 @@ namespace Week9Lab.Models
             return new ApplicationDbContext();
           
         }
-
+        public System.Data.Entity.DbSet<Week9Lab.Models.User> Users { get; set; }
         public System.Data.Entity.DbSet<Week9Lab.Models.Post> Posts { get; set; }
     }
+    
 }

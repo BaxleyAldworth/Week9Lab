@@ -180,6 +180,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PostsController.cs" />
+    <Compile Include="Controllers\UsersFollowedVM.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -215,11 +216,16 @@
     <Compile Include="Migrations\201512182202542_modelchange3.Designer.cs">
       <DependentUpon>201512182202542_modelchange3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512210722518_modelchange4.cs" />
+    <Compile Include="Migrations\201512210722518_modelchange4.Designer.cs">
+      <DependentUpon>201512210722518_modelchange4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Post.cs" />
+    <Compile Include="Models\UsersFollowedVM.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -322,6 +328,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201512182202542_modelchange3.resx">
       <DependentUpon>201512182202542_modelchange3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512210722518_modelchange4.resx">
+      <DependentUpon>201512210722518_modelchange4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
