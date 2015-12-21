@@ -211,6 +211,10 @@
     <Compile Include="Migrations\201512182144292_modelchange2.Designer.cs">
       <DependentUpon>201512182144292_modelchange2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512182202542_modelchange3.cs" />
+    <Compile Include="Migrations\201512182202542_modelchange3.Designer.cs">
+      <DependentUpon>201512182202542_modelchange3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -252,9 +256,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
@@ -318,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201512182144292_modelchange2.resx">
       <DependentUpon>201512182144292_modelchange2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512182202542_modelchange3.resx">
+      <DependentUpon>201512182202542_modelchange3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

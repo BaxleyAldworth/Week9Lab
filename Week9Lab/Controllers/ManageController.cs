@@ -98,21 +98,7 @@ namespace Week9Lab.Controllers
             }
             return RedirectToAction("ManageLogins", new { Message = message });
         }
-        //public ActionResult Follow(int userId)
-        //{
-        //    var user = db.User.Find(userId);
-        //    user.
-        //    db.SaveChanges();
-        //    return Content(user.Follow.ToString());
-        //}
-
-        //public ActionResult UnFollow(int userId)
-        //{
-        //    var user = db.Posts.Find(userId);
-        //    user.
-        //    db.SaveChanges();
-        //    return Content(User.UnFollow.ToString());
-        //}
+     
         // GET: /Manage/AddPhoneNumber
         public ActionResult AddPhoneNumber()
         {
