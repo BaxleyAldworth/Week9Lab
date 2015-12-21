@@ -32,6 +32,9 @@ namespace Week9Lab.Controllers
 
 
 
+        //
+
+
         //Get: Users followed
         [Authorize]
         public ActionResult Followed()
@@ -46,7 +49,7 @@ namespace Week9Lab.Controllers
         {
             var userid = User.Identity.GetUserId();
 
-            //grab all the users except for me. Already Following defaults to false here.
+           
             var model = db.Users.Where(x => x.Id != userid).Select(u => new UsersFollowedVM()
             {
                 FullName = u.FirstName + " " + u.LastName,
@@ -54,10 +57,10 @@ namespace Week9Lab.Controllers
                 Id = u.Id
             }).ToList();
 
-            //grab JUST the ids of all the people I'm following
+            
             var userids = db.Users.Find(userid).UsersFollowed.ToList().Select(x => x.Id);
 
-            //go back through the model and if the model's id is in my list of ids I'm following them mark them as 'Already Following'
+           
             foreach (var m in model)
             {
                 if (userids.Contains(m.Id))
@@ -68,7 +71,7 @@ namespace Week9Lab.Controllers
         }
 
 
-
+        //
 
 
 
@@ -95,7 +98,7 @@ namespace Week9Lab.Controllers
 
 
 
-
+        //
 
         //Post: Choose who to follow
         [HttpPost]
@@ -124,7 +127,7 @@ namespace Week9Lab.Controllers
         }
 
 
-
+        //
 
 
 
