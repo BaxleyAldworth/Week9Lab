@@ -195,6 +195,10 @@
     <Compile Include="Migrations\201512221750009_RemovedPostUsername.Designer.cs">
       <DependentUpon>201512221750009_RemovedPostUsername.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512222136249_RenamedAuthorOnPost.cs" />
+    <Compile Include="Migrations\201512222136249_RenamedAuthorOnPost.Designer.cs">
+      <DependentUpon>201512222136249_RenamedAuthorOnPost.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\PostIndexVM.cs" />
     <Compile Include="Models\User.cs" />
@@ -290,6 +294,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201512221750009_RemovedPostUsername.resx">
       <DependentUpon>201512221750009_RemovedPostUsername.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512222136249_RenamedAuthorOnPost.resx">
+      <DependentUpon>201512222136249_RenamedAuthorOnPost.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -10,32 +10,39 @@
     </a>
 </p>
 
- <div>Tweet Away!</div>
+<div>Tweet Away!</div>
 <table class="table">
-   
+
 
     @foreach (var item in Model)
     {
         <tr>
-            
+
             <td>
                 @Html.DisplayFor(modelItem => item.Message)
-              
+
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Author)
-                @using (Html.BeginForm("Follow", "Posts"))
+                @if (item.IsAlreadyFollowing)
                 {
+                    using (Html.BeginForm("UnFollow", "Posts", new { userId = item.AuthorId }))
+                    {
 
-                    <input type="submit" value="Follow" />
+                        <input type="submit" value="Unfollow" />
 
-                }  
-                @using (Html.BeginForm("UnFollow", "Posts"))
+                    }
+                }
+                else
                 {
+                    using (Html.BeginForm("Follow", "Posts", new { userId = item.AuthorId }))
+                    {
 
-                    <input type="submit" value="Unfollow" />
+                        <input type="submit" value="Follow" />
 
-                }  
+                    }
+                  
+                }
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.PostedOn)

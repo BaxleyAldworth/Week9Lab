@@ -18,12 +18,14 @@ namespace Week9Lab.Controllers
 
         public ActionResult Index()
         {
-
+            var currentUserId = User.Identity.GetUserId();
             var model = db.Posts.Select(x => new PostIndexVM()
             {
                 Message = x.Message,
                 PostId = x.Id,
-                Author = x.User.UserName,
+                Author = x.Author.UserName,
+                AuthorId = x.Author.Id,
+                IsAlreadyFollowing = x.Author.MyFollowers.Any(u => u.Id == currentUserId),
                 PostedOn = x.Created
             }).ToList();
 
@@ -68,10 +70,10 @@ namespace Week9Lab.Controllers
             var post = new Post()
             {
                 Created = DateTime.Now,
-                User = db.Users.Find(currentUserId),
+                Author = db.Users.Find(currentUserId),
                 Message = message
             };
-                
+
             db.Posts.Add(post);
             db.SaveChanges();
             return RedirectToAction("Index");
