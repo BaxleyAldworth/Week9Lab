@@ -7,13 +7,13 @@ namespace Week9Lab.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class modelchange4 : IMigrationMetadata
+    public sealed partial class InitialCreate : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(modelchange4));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
         
         string IMigrationMetadata.Id
         {
-            get { return "201512210722518_modelchange4"; }
+            get { return "201512221729332_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source

@@ -180,53 +180,22 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PostsController.cs" />
-    <Compile Include="Controllers\UsersFollowedVM.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201512172009331_Initial-Create.cs" />
-    <Compile Include="Migrations\201512172009331_Initial-Create.Designer.cs">
-      <DependentUpon>201512172009331_Initial-Create.cs</DependentUpon>
+    <Compile Include="Migrations\201512221729332_InitialCreate.cs" />
+    <Compile Include="Migrations\201512221729332_InitialCreate.Designer.cs">
+      <DependentUpon>201512221729332_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201512172210115_changeprops.cs" />
-    <Compile Include="Migrations\201512172210115_changeprops.Designer.cs">
-      <DependentUpon>201512172210115_changeprops.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201512172224291_displays.cs" />
-    <Compile Include="Migrations\201512172224291_displays.Designer.cs">
-      <DependentUpon>201512172224291_displays.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201512181713190_editingmodels.cs" />
-    <Compile Include="Migrations\201512181713190_editingmodels.Designer.cs">
-      <DependentUpon>201512181713190_editingmodels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201512182040461_deletedfollowandprofile.cs" />
-    <Compile Include="Migrations\201512182040461_deletedfollowandprofile.Designer.cs">
-      <DependentUpon>201512182040461_deletedfollowandprofile.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201512182058381_modelchange.cs" />
-    <Compile Include="Migrations\201512182058381_modelchange.Designer.cs">
-      <DependentUpon>201512182058381_modelchange.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201512182144292_modelchange2.cs" />
-    <Compile Include="Migrations\201512182144292_modelchange2.Designer.cs">
-      <DependentUpon>201512182144292_modelchange2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201512182202542_modelchange3.cs" />
-    <Compile Include="Migrations\201512182202542_modelchange3.Designer.cs">
-      <DependentUpon>201512182202542_modelchange3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201512210722518_modelchange4.cs" />
-    <Compile Include="Migrations\201512210722518_modelchange4.Designer.cs">
-      <DependentUpon>201512210722518_modelchange4.cs</DependentUpon>
+    <Compile Include="Migrations\201512221743040_ChangedPostID.cs" />
+    <Compile Include="Migrations\201512221743040_ChangedPostID.Designer.cs">
+      <DependentUpon>201512221743040_ChangedPostID.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Post.cs" />
-    <Compile Include="Models\UsersFollowedVM.cs" />
-    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -295,6 +264,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Twitter\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -305,32 +275,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201512172009331_Initial-Create.resx">
-      <DependentUpon>201512172009331_Initial-Create.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201512221729332_InitialCreate.resx">
+      <DependentUpon>201512221729332_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201512172210115_changeprops.resx">
-      <DependentUpon>201512172210115_changeprops.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201512172224291_displays.resx">
-      <DependentUpon>201512172224291_displays.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201512181713190_editingmodels.resx">
-      <DependentUpon>201512181713190_editingmodels.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201512182040461_deletedfollowandprofile.resx">
-      <DependentUpon>201512182040461_deletedfollowandprofile.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201512182058381_modelchange.resx">
-      <DependentUpon>201512182058381_modelchange.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201512182144292_modelchange2.resx">
-      <DependentUpon>201512182144292_modelchange2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201512182202542_modelchange3.resx">
-      <DependentUpon>201512182202542_modelchange3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201512210722518_modelchange4.resx">
-      <DependentUpon>201512210722518_modelchange4.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201512221743040_ChangedPostID.resx">
+      <DependentUpon>201512221743040_ChangedPostID.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

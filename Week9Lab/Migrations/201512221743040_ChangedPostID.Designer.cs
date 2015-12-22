@@ -7,13 +7,13 @@ namespace Week9Lab.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class changeprops : IMigrationMetadata
+    public sealed partial class ChangedPostID : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(changeprops));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(ChangedPostID));
         
         string IMigrationMetadata.Id
         {
-            get { return "201512172210115_changeprops"; }
+            get { return "201512221743040_ChangedPostID"; }
         }
         
         string IMigrationMetadata.Source

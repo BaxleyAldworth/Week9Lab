@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -6,14 +7,10 @@ namespace Week9Lab.Models
 {
     public class Post
     {
-
-        public int PostId { get; set; }
-       
-        public string Title { get; set; }
+        public int Id { get; set; }
         public string Message { get; set; }
-    
-        [NotMapped]
-        public DateTime PostDate { get; set; }
-        public virtual UsersFollwedVM User { get; set; }
+        public DateTime Created { get; set; }
+        public string UserName { get; set; }
+        public virtual TwitterUser User { get; set; }
     }
 }
