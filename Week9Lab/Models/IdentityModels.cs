@@ -59,6 +59,7 @@ namespace Week9Lab.Models
            
         }
         public DbSet<Post> Posts { get; set; }
+        
     }
     
 }

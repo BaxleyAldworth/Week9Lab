@@ -191,7 +191,12 @@
     <Compile Include="Migrations\201512221743040_ChangedPostID.Designer.cs">
       <DependentUpon>201512221743040_ChangedPostID.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512221750009_RemovedPostUsername.cs" />
+    <Compile Include="Migrations\201512221750009_RemovedPostUsername.Designer.cs">
+      <DependentUpon>201512221750009_RemovedPostUsername.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\PostIndexVM.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -202,6 +207,8 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\twitterbird.png" />
+    <Content Include="Content\twitterbirdwhite.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -280,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201512221743040_ChangedPostID.resx">
       <DependentUpon>201512221743040_ChangedPostID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512221750009_RemovedPostUsername.resx">
+      <DependentUpon>201512221750009_RemovedPostUsername.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

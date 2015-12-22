@@ -1,34 +1,47 @@
-﻿@model IEnumerable<Week9Lab.Models.Post>
+﻿@model IEnumerable<Week9Lab.Models.PostIndexVM>
 
 @{
     ViewBag.Title = "Twitter";
 }
 
 <p>
-   <a href="http://localhost:61247/Posts/Create">
-        <img border="0" alt="twitter" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhYyAg3RkkTpLADqR4fAkAdcq8R8K1XRuUbi7hnqa87-_lnlaH" width="40" height="40">
+    <a href="http://localhost:61247/Posts/Create">
+        <img height="100" width="100" src="~/Content/twitterbird.png" />
     </a>
 </p>
 
-
+ <div>Tweet Away!</div>
 <table class="table">
-<div>Tweet Away!</div>
+   
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Message)
-        </td>
-       
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.PostId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.PostId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.PostId })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+              
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+                @using (Html.BeginForm("Follow", "Posts"))
+                {
+
+                    <input type="submit" value="Follow" />
+
+                }  
+                @using (Html.BeginForm("UnFollow", "Posts"))
+                {
+
+                    <input type="submit" value="Unfollow" />
+
+                }  
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostedOn)
+            </td>
+
+        </tr>
+    }
 
 </table>
